@@ -25,7 +25,8 @@
 			// If the query includes 'print-pdf' we'll use the PDF print sheet
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
-
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -47,47 +48,87 @@
 				
 
 				
-		<!-- 		<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-    
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-
-				</section> -->
 				
 				
 
 				<section>
-					<h2>Three things we want you to do</h2>
+					<h2>The three languages</h2>
 					<ol>
-						<li class="fragment">Work hard</li>
-						<li class="fragment">Ask questions</li>
-						<li class="fragment">Have fun</li>
+						<li class="">HTML</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>What HTML looks like</h2>
+					<p>&nbsp;</p><pre><code contenteditable>&lt;p&gt;The last man in the world was alone in a room.&lt;/p&gt;
+&lt;p&gt;Then he heard a knock in the door.&lt;/p&gt;</code></pre><p>&nbsp;</p>
+					<p>The last man in the world was alone in a room.</p>
+					<p>Then he heard a knock on the door.</p>
+				</section>
+				
+				<section>
+					<h2>What HTML does on a page</h2>
+					<p>Let's look at <a href="http://www.codewithmedc.com" target="_blank">Code with me</a>.</p>
+				</section>
+				
+				<section>
+					<h2>The three languages</h2>
+					<ol>
+						<li class="">HTML</li>
+						<li class="fragment">CSS</li>
 					</ol>
 				</section>
 
 				<section>
-					<h2>Thanks to our sponsors</h2>
-					<ul>
-						<li class="fragment">NPR</li>
-						<li class="fragment">Medill DC</li>
-						<li class="fragment">ONA DC</li>
-					</ul>
+					<h2>What CSS looks like</h2>
+					<p>&nbsp;</p><pre><code contenteditable>p {
+	color: blue;
+}</code></pre><p>&nbsp;</p>
+				
+					<p style="color: blue">The last man in the world was alone in a room.</p>
+					<p style="color: blue">Then he heard a knock in the door.</p>
 				</section>
-			
+				
+				<section>
+					<h2>What CSS do on a page? </h2>
+					<p>Let's look at <a href="http://www.codewithmedc.com" target="_blank">Code with me</a> without CSS.</p>
+				</section>
+				
+				<section>
+					<h2>The three languages</h2>
+					<ol>
+						<li class="">HTML</li>
+						<li class="">CSS</li>
+						<li class="fragment">JavaScript</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>What JavaScript looks like</h2>
+<p>&nbsp;</p><pre><code contenteditable>$("p").click(function() { 
+	$("p").fadeOut();
+});</code></pre><p>&nbsp;</p>
+					<p class="target">The last man in the world was alone in a room.</p>
+					<p class="target">Then he heard a knock in the door.</p>
+					<script>
+						$("p.target").click(function() {
+							$("p.target").fadeOut();
+						});
+					</script>
+				</section>
+				
+				<section>
+					<h2>What does JavaScript do on a page?</h2>
+					<p>Let's look at <a href="http://www.npr.org/">NPR.org</a> without JavaScript.</p>
+				</section>
+				
+				<section>
+					<h2>With your mentors</h2>
+					<p>Go to a news site, inspect the HTML, disable the CSS and JS, and get a feel for what the three languages.</p>
+				</section>
+				
+				
+
 			</div>
 
 			<!-- The navigational controls UI -->

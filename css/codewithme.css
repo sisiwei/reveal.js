@@ -10,6 +10,7 @@
 
 .reveal a:not(.image) {
 	color: rgb(0,178,158);
+	text-decoration: none;
 }
 
 .reveal li#fragment { color: black;  }
@@ -18,7 +19,27 @@
 
 body { color: black;}
 
-.reveal .slides section .fragment.visible {
+.reveal .slides section li {
 	font-size: 52px;
 	line-height: 72px;
+	color: black;
+}
+
+.reveal .slides section.faded-fragments .fragment {
+	color: #999;
+/* 	opacity: 0.5; */
+}
+
+.reveal .slides section.faded-fragments .fragment.visible {
+	color: black;
+	opacity: 1;
+}
+
+.reveal a:hover {
+	color: #00B29E;
+	text-decoration: underline;
+}
+
+.reveal .slides section .fragment.start-visible {
+	opacity: 1;
 }

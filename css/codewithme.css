@@ -1,3 +1,18 @@
-.reveal h1, .reveal h2, .reveal h3, .reveal h4 { color: black; }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 { color: black; text-transform: none; }
 
 .reveal section img { border: none; -webkit-box-shadow: none; }
+
+.reveal a:not(.image) {
+	color: rgb(0,178,158);
+}
+
+.reveal li#fragment { color: black;  }
+
+::selection { color: black; }
+
+body { color: black;}
+
+.reveal .slides section .fragment.visible {
+	font-size: 52px;
+	line-height: 72px;
+}

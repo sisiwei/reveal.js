@@ -1,5 +1,11 @@
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 { color: black; text-transform: none; }
 
+.reveal h1 {
+	-webkit-box-shadow: none;
+	text-shadow: none;
+}
+
+
 .reveal section img { border: none; -webkit-box-shadow: none; }
 
 .reveal a:not(.image) {

@@ -159,6 +159,7 @@ body {
 .reveal p {
 	margin-bottom: 10px;
 	line-height: 1.2em;
+	color: black;
 }
 
 .reveal q,
@@ -256,6 +257,7 @@ body {
 
 	right: 0;
 	bottom: 0;
+	opacity: 0;
 }
 	
 	.reveal .controls a {
@@ -880,7 +882,7 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: rgba( 0, 0, 0, 0 );
+	background: rgb(243,241,220);
 
 	-webkit-transition: background 800ms ease;
 	   -moz-transition: background 800ms ease;
